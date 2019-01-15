@@ -1,0 +1,13 @@
+# Tuesday 15/01/19
+
+### Problem: Adding Bootstrap to an Angular project
+Suggested Solution:
+1. Go to the project's directory
+2. Run:
+    ```sh
+    $ npm install bootstrap@4 --save
+    ```
+3. Go to <project-root>/node_modules/bootstrap/dist/css and copy the relative path of bootstrap.css
+4. In angular.json (also in project root), under style, paste the path
+
+Tags: angular, bootstrap
