@@ -1,3 +1,22 @@
+## Monday 21/01/19
+
+---
+
+##### Problem: Serving an Angular app from Boot Spring
+Suggested Solution:
+1. Build the angular app:  
+    ```sh
+    $ ng build --prod
+    ```
+2. In the Spring Boot project, create a new directory named 'public' under 'resources'.
+3. Copy the files under 'dist/<project-name>' from the angular project to 'resources/public'
+4. The app should be accessible from <host-ip>:8080
+    
+*Tags: angular, boot spring*
+
+---
+
+
 ## Tuesday 16/01/19
 
 ---
