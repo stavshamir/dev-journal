@@ -11,6 +11,7 @@ Suggested Solution:
 2. In the Spring Boot project, create a new directory named 'public' under 'resources'.
 3. Copy the files under 'dist/<project-name>' from the angular project to 'resources/public'
 4. The app should be accessible from <host-ip>:8080
+5. If the root html file is names something other than index.html, it will be availale at <host-ip>:8080/<filename>.html
     
 *Tags: angular, boot spring*
 
