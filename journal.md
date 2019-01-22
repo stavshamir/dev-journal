@@ -25,6 +25,8 @@ If there are http requests to the backend, use only the endpoint URL, i.e. chang
 
 ## Monday 21/01/19
 
+---
+
 ##### Problem: Serving an Angular app from Boot Spring
 Suggested Solution:
 1. Build the angular app:  
@@ -40,7 +42,10 @@ Suggested Solution:
 
 ---
 
+
 ## Tuesday 16/01/19
+
+---
 
 ##### Problem: Creating a custom CSS class using Bootstrap classes
 Suggested Solution:
@@ -59,6 +64,8 @@ Suggested Solution:
 
 ## Tuesday 15/01/19
 
+---
+
 ##### Problem: Adding Bootstrap to an Angular project
 Suggested Solution:
 1. Go to the project's directory
@@ -71,4 +78,3 @@ Suggested Solution:
 
 *Tags: angular, bootstrap*
 
----
