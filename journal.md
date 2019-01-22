@@ -1,6 +1,27 @@
-## Monday 21/01/19
+## Monday 22/01/19
+
+##### Problem: Serving an Angular app from Boot Spring as an external dependency (jar)
+Suggested Solution:
+1. Build the angular app:  
+    ```sh
+    $ ng build --prod
+    ```
+2. Move the results from `dist` to the following directory structure `META-INF/resources`.
+3. Create a jar: 
+    ```sh
+    $ jar -cf <name>.jar META-INF
+    ```
+4. Add the dependency to the build.gradle of the target Boot Spring project:
+    ```groovy
+    compile files('full-path-to-jar/name.jar')
+    ```
+5. The app should be accessible from `<host-ip>:8080`
+    
+*Tags: angular, boot spring, jar*
 
 ---
+
+## Monday 21/01/19
 
 ##### Problem: Serving an Angular app from Boot Spring
 Suggested Solution:
@@ -17,10 +38,7 @@ Suggested Solution:
 
 ---
 
-
 ## Tuesday 16/01/19
-
----
 
 ##### Problem: Creating a custom CSS class using Bootstrap classes
 Suggested Solution:
@@ -39,8 +57,6 @@ Suggested Solution:
 
 ## Tuesday 15/01/19
 
----
-
 ##### Problem: Adding Bootstrap to an Angular project
 Suggested Solution:
 1. Go to the project's directory
@@ -53,3 +69,4 @@ Suggested Solution:
 
 *Tags: angular, bootstrap*
 
+---
