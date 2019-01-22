@@ -1,5 +1,14 @@
 ## Monday 22/01/19
 
+##### Problem: Creating a jar for an Angular app with gradle
+Suggested Solution:
+[This link](https://ordina-jworks.github.io/architecture/2018/10/12/spring-boot-angular-gradle.html) provides nice explanation on how to do it.
+Also there is an example in my swagger4kafka-ui repository.
+    
+*Tags: angular, boot spring, jar, gradle*
+
+---
+
 ##### Problem: Serving an Angular app from Boot Spring as an external dependency (jar)
 Suggested Solution:
 1. Build the angular app:  
@@ -16,12 +25,16 @@ Suggested Solution:
     compile files('full-path-to-jar/name.jar')
     ```
 5. The app should be accessible from `<host-ip>:8080`
+
+If there are http requests to the backend, use only the endpoint URL, i.e. change the request url from `http://localhost:8080/endpoint` to `/endpoint`.
     
 *Tags: angular, boot spring, jar*
 
 ---
 
 ## Monday 21/01/19
+
+---
 
 ##### Problem: Serving an Angular app from Boot Spring
 Suggested Solution:
@@ -38,7 +51,10 @@ Suggested Solution:
 
 ---
 
+
 ## Tuesday 16/01/19
+
+---
 
 ##### Problem: Creating a custom CSS class using Bootstrap classes
 Suggested Solution:
@@ -57,6 +73,8 @@ Suggested Solution:
 
 ## Tuesday 15/01/19
 
+---
+
 ##### Problem: Adding Bootstrap to an Angular project
 Suggested Solution:
 1. Go to the project's directory
@@ -69,4 +87,3 @@ Suggested Solution:
 
 *Tags: angular, bootstrap*
 
----
