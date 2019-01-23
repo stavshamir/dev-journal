@@ -1,3 +1,13 @@
+## Monday 23/01/19
+
+##### Problem: Trying a regular expressions
+Suggested Solution:
+[This](https://regex101.com/) is a nice tool to quickly and easily test out regular expressions.
+    
+*Tags: regex, regular expressions*
+
+---
+
 ## Monday 22/01/19
 
 ##### Problem: Creating a jar for an Angular app with gradle
