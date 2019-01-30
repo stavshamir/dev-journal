@@ -1,3 +1,22 @@
+## Monday 30/01/19
+
+##### Problem: Add sonatype snapshot dependency in gradle
+Suggested Solution:
+[This SO answer](https://stackoverflow.com/a/48459437) describes how to do it:
+```groovy
+repositories {
+    mavenCentral()
+    // add sonatype repository
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+```
+    
+*Tags: gradle, sonatype*
+
+---
+
 ## Monday 23/01/19
 
 ##### Problem: Trying a regular expressions
