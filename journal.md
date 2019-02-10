@@ -1,4 +1,4 @@
-##Sunnday 10/02/19
+## Sunday 10/02/19
 
 ##### Problem: Remove a specific line from a file in linux
 Suggested Solution:
