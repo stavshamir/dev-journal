@@ -1,3 +1,16 @@
+##Sunnday 10/02/19
+
+##### Problem: Remove a specific line from a file in linux
+Suggested Solution:
+```sh
+$ sed -i '/substring of line to delete/d' filename
+```
+[More info in SO](https://stackoverflow.com/questions/5410757/delete-lines-in-a-text-file-that-contain-a-specific-string).
+    
+*Tags: commandline, sed, script*
+
+---
+
 ## Monday 30/01/19
 
 ##### Problem: Add sonatype snapshot dependency in gradle
