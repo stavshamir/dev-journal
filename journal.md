@@ -6,6 +6,11 @@ Tag the last commit when a version is ready to be released with the new version 
 ```sh
 $ git tag -a vX.Y.Z -F release-notes-filename
 ```
+To push the tags:
+```sh
+$ git push --tags
+```
+
 [Read more](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).
     
 *Tags: git, tag, version*
