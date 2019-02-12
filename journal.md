@@ -1,3 +1,17 @@
+## Tuesday 12/02/19
+
+##### Problem:Tagging a release in a git repository
+Suggested Solution:
+Tag the last commit when a version is ready to be released with the new version number:
+```sh
+$ git tag -a vX.Y.Z -F release-notes-filename
+```
+[Read more](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).
+    
+*Tags: git, tag, version*
+
+---
+
 ## Sunday 10/02/19
 
 ##### Problem: Remove a specific line from a file in linux
