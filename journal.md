@@ -1,6 +1,22 @@
+## Monday 18/02/19
+
+##### Problem: Should default values be used in the `topics` attribute of `@KafkaListener`?
+Suggested Solution:
+```java
+@KafkaListener(topics = "${kafka.topic.foo}", containerFactory = "fooFactory")
+```
+* Cons for using default value - if the value is not found, the default which will be used might be the wrong topic, and in that case system will not
+function as expected without any notice. It will be much easier to find the error if it breaks non-silently.
+* Pros for using default value - the service will not crash if the value is not found, and if a sensible default is provided things might still
+work correctly. 
+    
+*Tags: spring, @KafkaListener, default*
+
+---
+
 ## Tuesday 12/02/19
 
-##### Problem:Tagging a release in a git repository
+##### Problem: Tagging a release in a git repository
 Suggested Solution:
 Tag the last commit when a version is ready to be released with the new version number:
 ```sh
