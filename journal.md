@@ -1,4 +1,74 @@
+## Tuesday 12/02/19
+
+##### Problem:Tagging a release in a git repository
+Suggested Solution:
+Tag the last commit when a version is ready to be released with the new version number:
+```sh
+$ git tag -a vX.Y.Z -F release-notes-filename
+```
+To push the tags:
+```sh
+$ git push --tags
+```
+
+[Read more](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).
+    
+*Tags: git, tag, version*
+
+---
+
+## Sunday 10/02/19
+
+##### Problem: Remove a specific line from a file in linux
+Suggested Solution:
+```sh
+$ sed -i '/substring of line to delete/d' filename
+```
+[More info in SO](https://stackoverflow.com/questions/5410757/delete-lines-in-a-text-file-that-contain-a-specific-string).
+    
+*Tags: commandline, sed, script*
+
+---
+
+## Monday 30/01/19
+
+##### Problem: Add sonatype snapshot dependency in gradle
+Suggested Solution:
+[This SO answer](https://stackoverflow.com/a/48459437) describes how to do it:
+```groovy
+repositories {
+    mavenCentral()
+    // add sonatype repository
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+```
+    
+*Tags: gradle, sonatype*
+
+---
+
+## Monday 23/01/19
+
+##### Problem: Trying a regular expressions
+Suggested Solution:
+[This](https://regex101.com/) is a nice tool to quickly and easily test out regular expressions.
+    
+*Tags: regex, regular expressions*
+
+---
+
 ## Monday 22/01/19
+
+##### Problem: Creating a jar for an Angular app with gradle
+Suggested Solution:
+[This link](https://ordina-jworks.github.io/architecture/2018/10/12/spring-boot-angular-gradle.html) provides nice explanation on how to do it.
+Also there is an example in my swagger4kafka-ui repository.
+    
+*Tags: angular, boot spring, jar, gradle*
+
+---
 
 ##### Problem: Serving an Angular app from Boot Spring as an external dependency (jar)
 Suggested Solution:
