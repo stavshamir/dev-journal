@@ -1,5 +1,29 @@
 ## Monday 18/02/19
 
+##### Problem: Configuring a custom authorization method for `@PreAuthorize`
+Suggested Solution:
+1. Create a bean (let's say `SomeServiceImpl`) with a method returning a boolean
+2. Use it like this:
+    ```java
+    @PreAuthorize("@someServiceImpl.boolMethod()")
+    ```
+    Notice the syntax of `@<camelCaseBeanClassName>.<method>()`.
+3. If needed, an argument of the annotated method can be referenced in the annotation:
+    ```java
+    @PreAuthorize("@someServiceImpl.boolMethod(#param)")
+    public void foo(String param) {
+        ...
+    }
+    ```
+Further read:
+[Custom authorization method](https://dreamix.eu/blog/java/implementing-custom-authorization-function-for-springs-pre-and-post-annotations)
+
+*Tags: spring boot, @PreAuthorize, custom authorization*
+
+---
+
+## Monday 18/02/19
+
 ##### Problem: Should default values be used in the `topics` attribute of `@KafkaListener`?
 Suggested Solution:
 ```java
