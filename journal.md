@@ -1,3 +1,14 @@
+## Monday 11/03/19
+##### Problem: Providing autocompletion to bash scripts
+Suggested Solution:
+Create and source the following script:
+```bash
+_options=$(compgen -W "opt1 opt2 opt3")
+complete -o nospace -W "${_options}" 'name-of-function-for-autocomplete'
+```
+There is more information for more complex autocomplete in [here](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1).
+
+
 ## Monday 18/02/19
 
 ##### Problem: Configuring a custom authorization method for `@PreAuthorize`
