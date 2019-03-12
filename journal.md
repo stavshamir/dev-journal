@@ -1,4 +1,12 @@
 ## Monday 11/03/19
+##### Problem: Which ports are taken by which processes?
+Suggested Solution:
+1. [Install netstat in CentOS](https://cyruslab.net/2014/07/11/installing-netstat-on-centos-7-minimal-installation/).
+2. Run `$ netstat -plnt`
+
+---
+
+## Monday 11/03/19
 ##### Problem: Providing autocompletion to bash scripts
 Suggested Solution:
 Create and source the following script:
@@ -8,6 +16,7 @@ complete -o nospace -W "${_options}" 'name-of-function-for-autocomplete'
 ```
 There is more information for more complex autocomplete in [here](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1).
 
+---
 
 ## Monday 18/02/19
 
