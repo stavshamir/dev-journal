@@ -1,3 +1,12 @@
+## Tuesday 19/03/19
+##### Problem: How to print only the nth column of a file?
+Suggested Solution:
+`$ <cmd> | awk '{print $<n>}'`
+
+Example: `docker service ls | tail -n +2 | awk '{print $2}'`
+
+---
+
 ## Tuesday 12/03/19
 ##### Problem: Which ports are taken by which processes?
 Suggested Solution:
