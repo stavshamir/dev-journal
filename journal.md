@@ -1,4 +1,11 @@
 ## Tuesday 19/03/19
+##### Problem: How to easily create a CLI in python?
+Suggested Solution:
+[Python Fire](https://github.com/google/python-fire)
+
+---
+
+## Tuesday 19/03/19
 ##### Problem: How to print only the nth column of a file?
 Suggested Solution:
 `$ <cmd> | awk '{print $<n>}'`
