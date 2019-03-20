@@ -1,4 +1,4 @@
-## Tuesday 19/03/19
+## Wednsday 20/03/19
 ##### Problem: How to easily create a CLI in python?
 Suggested Solution:
 [Python Fire](https://github.com/google/python-fire)
