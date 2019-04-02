@@ -3,6 +3,11 @@
 Suggested Solution:
 [Python Fire](https://github.com/google/python-fire)
 
+Suggested Solution:
+[click](https://click.palletsprojects.com)
+
+*Tags: python, cli*
+
 ---
 
 ## Tuesday 19/03/19
@@ -12,6 +17,8 @@ Suggested Solution:
 
 Example: `docker service ls | tail -n +2 | awk '{print $2}'`
 
+*Tags: awk, column*
+
 ---
 
 ## Tuesday 12/03/19
@@ -19,6 +26,8 @@ Example: `docker service ls | tail -n +2 | awk '{print $2}'`
 Suggested Solution:
 1. [Install netstat in CentOS](https://cyruslab.net/2014/07/11/installing-netstat-on-centos-7-minimal-installation/).
 2. Run `$ netstat -plnt`
+
+*Tags: netstat, ports*
 
 ---
 
@@ -31,6 +40,8 @@ _options=$(compgen -W "opt1 opt2 opt3")
 complete -o nospace -W "${_options}" 'name-of-function-for-autocomplete'
 ```
 There is more information for more complex autocomplete in [here](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1).
+
+*Tags: autocomplete, bash, scripts*
 
 ---
 
@@ -57,8 +68,6 @@ Further read:
 *Tags: spring boot, @PreAuthorize, custom authorization*
 
 ---
-
-## Monday 18/02/19
 
 ##### Problem: Should default values be used in the `topics` attribute of `@KafkaListener`?
 Suggested Solution:
@@ -106,7 +115,7 @@ $ sed -i '/substring of line to delete/d' filename
 
 ---
 
-## Monday 30/01/19
+## Wednsday 30/01/19
 
 ##### Problem: Add sonatype snapshot dependency in gradle
 Suggested Solution:
@@ -125,7 +134,7 @@ repositories {
 
 ---
 
-## Monday 23/01/19
+## Wednsday 23/01/19
 
 ##### Problem: Trying a regular expressions
 Suggested Solution:
@@ -138,7 +147,7 @@ Suggested Solution:
 
 ---
 
-## Monday 22/01/19
+## Tuesday 22/01/19
 
 ##### Problem: Creating a jar for an Angular app with gradle
 Suggested Solution:
