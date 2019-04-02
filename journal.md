@@ -130,6 +130,9 @@ repositories {
 ##### Problem: Trying a regular expressions
 Suggested Solution:
 [This](https://regex101.com/) is a nice tool to quickly and easily test out regular expressions.
+
+Suggested Solution:
+[Or This](https://regexr.com/) for interactivity, cheat sheet, and other helpful regexp tools.
     
 *Tags: regex, regular expressions*
 
