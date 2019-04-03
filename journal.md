@@ -1,3 +1,13 @@
+## Wednsday 03/04/19
+##### Problem: Debugging bash scripts
+Suggested Solution:
+* Run `$ set -x` to get scripts to print the results of inner statement
+* Run `$ set +x` to turn it off
+
+*Tags: bash, script, debug*
+
+---
+
 ## Wednsday 20/03/19
 ##### Problem: How to easily create a CLI in python?
 Suggested Solution:
