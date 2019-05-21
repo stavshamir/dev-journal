@@ -1,3 +1,12 @@
+## Tuesday 21/05/19
+##### Problem: Search for string in files in a directory
+Suggested Solution:
+* Recursive grep: `grep -rl string .`
+
+*Tags: search, grep*
+
+---
+
 ## Wednsday 03/04/19
 ##### Problem: Debugging bash scripts
 Suggested Solution:
