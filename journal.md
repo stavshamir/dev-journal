@@ -1,3 +1,14 @@
+## Wednsday 19/06/19
+##### Problem: Copy docker image from host to host
+Suggested Solution:
+* Run `docker image save --output <filename> <image-name>`
+* Run `scp <filename> <user>@<ip>:<path>`
+* Run `docker image load -i <filename>`
+
+*Tags: docker*
+
+---
+
 ## Tuesday 21/05/19
 ##### Problem: Search for string in files in a directory
 Suggested Solution:
