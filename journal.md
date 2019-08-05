@@ -1,3 +1,14 @@
+## Monday 05/08/19
+##### Problem: Spin up a mysql (mariadb) dcoker continaer
+Suggested Solution:
+1. `docker pull mariadb/server`
+2. `docker run -d --name maria -eMARIADB_ROOT_PASSWORD=password mariadb/server:latest`
+3. `docker container exec -it maria mysql -uroot -ppassword`
+
+*Tags: docker, mysql, mariadb*
+
+---
+
 ## Wednsday 19/06/19
 ##### Problem: Copy docker image from host to host
 Suggested Solution:
