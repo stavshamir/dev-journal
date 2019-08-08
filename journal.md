@@ -1,5 +1,13 @@
+## Thursday 08/08/19
+##### Problem: bash productivity
+[useful bash shourtcuts](https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity)
+
+*Tags: bash, productivity, shortcuts*
+
+---
+
 ## Monday 05/08/19
-##### Problem: Spin up a mysql (mariadb) dcoker continaer
+##### Problem: Spin up a mysql (mariadb) dcoker container
 Suggested Solution:
 1. `docker pull mariadb/server`
 2. `docker run -d --name maria -eMARIADB_ROOT_PASSWORD=password mariadb/server:latest`
