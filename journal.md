@@ -1,3 +1,32 @@
+## Sunday 25/08/19
+##### Problem: Unit-testing Spring Boot Applications with Kotlin and JUnit5 
+__Configuring gradle (`build.gradle.kts`):__
+1. The `spring-boot-starter-test` dependency include JUnit4, so we should exclude it:
+    ```kotlin
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "junit", module = "junit")
+    }
+    ``` 
+2. Add the JUnit5 dependencies:
+    ```kotlin 
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.1")
+    ```
+3. Add the following task:
+    ```kotlin
+    tasks.withType<Test> {
+        useJUnitPlatform()
+    }
+    ```
+
+__Changes to the test class:__
+1. The import statement for the test annotation is `import org.junit.jupiter.api.Test`
+2. Replace `@RunWith(...)` with `@ExtendWith(SpringExtension::class)`
+
+*Tags: kotling, spring boot, test, junit5 *
+
+---
+
 ## Thursday 08/08/19
 ##### Problem: bash productivity
 [useful bash shourtcuts](https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity)
