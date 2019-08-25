@@ -23,7 +23,7 @@ __Changes to the test class:__
 1. The import statement for the test annotation is `import org.junit.jupiter.api.Test`
 2. Replace `@RunWith(...)` with `@ExtendWith(SpringExtension::class)`
 
-*Tags: kotling, spring boot, test, junit5 *
+*Tags: kotlin, spring boot, test, junit5 *
 
 ---
 
