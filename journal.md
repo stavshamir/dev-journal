@@ -1,3 +1,25 @@
+## Sunday 01/09/19
+##### Problem: Use vim key bindings in bash 
+In a file named ~/.inputrc, place the following lines:
+```sh
+set editing-mode vi
+set show-mode-in-prompt on
+
+set keymap vi-command
+bind '"jj":vi-movement-mode'
+bind -r "\e"
+```
+
+- Use vim binding: `set editing-mode vi` and `set keymap vi-command`
+- Distinguish between normal-mode and insert-mode (only works in bash 4.3 and up): `bind '"jk":vi-movement-mode'`
+- Remap <Esc> to jj:
+    ```sh
+    bind '"jj":vi-movement-mode'
+    bind -r "\e"
+    ```  
+
+---
+
 ## Sunday 25/08/19
 ##### Problem: Unit-testing Spring Boot Applications with Kotlin and JUnit5 
 __Configuring gradle (`build.gradle.kts`):__
