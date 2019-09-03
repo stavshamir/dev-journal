@@ -1,3 +1,8 @@
+## Tuesday  03/09/19
+##### Problem: Set up kafka in docker for local development in centos 7
+1. (Open firewall ports)[https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2017/03/02/99032194/opening+up+a+port+on+centos+7+firewall+using+firewalld]
+2. (Deploy)[https://linuxhint.com/docker_compose_kafka/]
+
 ## Sunday 01/09/19
 ##### Problem: Use vim key bindings in bash 
 In a file named ~/.inputrc, place the following lines:
