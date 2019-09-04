@@ -1,7 +1,48 @@
+## Tuesday  04/09/19
+##### Problem: Configuring  Spring Boot + Kotlin + Kafka
+```java
+@EnableKafka
+@Configuration
+class KafkaConfiguration {
+
+    @Bean
+    fun consumerFactory(): ConsumerFactory<String, Any> {
+        val properties = hashMapOf<String, Any>(
+                ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG to "localhost:9092",
+                ConsumerConfig.GROUP_ID_CONFIG to "group-id",
+                ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
+                ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java
+        )
+
+        return DefaultKafkaConsumerFactory(properties)
+    }
+
+    @Bean
+    fun kafkaListenerContainerFactory(): ConcurrentKafkaListenerContainerFactory<String, String> {
+        val factory = ConcurrentKafkaListenerContainerFactory<String, String>()
+        factory.consumerFactory = consumerFactory()
+        return factory
+    }
+
+}
+
+@Component
+class KafkaConsumer {
+
+    @KafkaListener(topics = ["test"], groupId = "group-id")
+    fun listen(message: String) = println("Received message: $message")
+
+}
+```
+
+---
+
 ## Tuesday  03/09/19
 ##### Problem: Set up kafka in docker for local development in centos 7
 1. (Open firewall ports)[https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2017/03/02/99032194/opening+up+a+port+on+centos+7+firewall+using+firewalld]
 2. (Deploy)[https://linuxhint.com/docker_compose_kafka/]
+
+---
 
 ## Sunday 01/09/19
 ##### Problem: Use vim key bindings in bash 
