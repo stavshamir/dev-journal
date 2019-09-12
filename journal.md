@@ -1,3 +1,7 @@
+## Thursday 12/09/19
+##### Problem: Spinning up a mongo deocker container
+[solution](https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment/)
+
 ## Tuesday  04/09/19
 ##### Problem: Configuring  Spring Boot + Kotlin + Kafka
 ```java
@@ -39,8 +43,8 @@ class KafkaConsumer {
 
 ## Tuesday  03/09/19
 ##### Problem: Set up kafka in docker for local development in centos 7
-1. (Open firewall ports)[https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2017/03/02/99032194/opening+up+a+port+on+centos+7+firewall+using+firewalld]
-2. (Deploy)[https://linuxhint.com/docker_compose_kafka/]
+1. [Open firewall ports](https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2017/03/02/99032194/opening+up+a+port+on+centos+7+firewall+using+firewalld)
+2. [Deploy](https://linuxhint.com/docker_compose_kafka/)
 
 ---
 
