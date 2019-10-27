@@ -1,3 +1,7 @@
+## Sunday 27/10/19
+##### Creating a small local YUM and Pip repository
+[solution](https://medium.com/@vando/creating-an-small-local-yum-and-pip-repository-f04ff08c144f)
+
 ## Thursday 12/09/19
 ##### Problem: Spinning up a mongo deocker container
 [solution](https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment/)
